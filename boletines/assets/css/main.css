@@ -1,0 +1,181 @@
+		.red{
+
+			height: 200px;
+			width: 100px;
+			background-color: red; 
+		}
+
+	 	#boton-pago{
+			background-color:blue; 
+		}
+
+		p{
+			color:black;
+		}
+
+		.container{
+			background: #2980B9;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.content{
+			max-width: 960px;
+			max-height: 500px; 
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			border-radius:4px;
+			position: relative;
+			overflow: scroll;
+		}
+
+		.content{
+				padding: 1em;
+			}
+			td{
+				display: block;
+				width: 100%;
+			}
+			td:nth-of-type(1){
+				font-size: 1.8em;
+				font-weight: bold;
+				color:#642B73;
+			}
+			th{
+				display: none;
+			}
+
+		/*tipo de letra a todo el contenido html*/
+		html{
+			font-family: 'Roboto Slab', serif;
+		}
+		/*valor que nos permite cambiar el color de link y que aprezca subraryado o no*/
+		a{
+			text-decoration: none;
+			color: #32a852;
+		}
+		/*valor que nos permite darle opacidad al los links cuando se coloca el cursos sobre ellos*/
+		a:hover{
+			opacity: 0.4;
+		}
+		/*valor que nos permite ajustar la imagen al 100% de bloque donde se encuentra*/
+		img{
+			max-width: 100%;
+		}
+
+		.title{
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.fa-star{
+			color: #ffc400;
+		}
+
+		.paragraph{
+			line-height: 1.8em;
+			font-weight: 200;
+		}
+
+		.teibl{
+			width: 100%;
+			border-spacing: 0;
+		}
+
+		.teibl td, .teibl th{
+			padding: 1em;
+			text-align: left;
+		}
+
+		.teibl tr:nth-child(even){background-color: #f3e5f5;}
+		.title-item{
+			/*border-bottom-style: solid;
+			border-width: 2px;
+			border-color: #C6426E;*/
+			border-bottom: solid 2px #C6426E; 
+			padding-bottom: 1em;
+			font-size: 2em;	
+		}
+
+		.position{
+			background-color: #C6426E;
+			color: white;
+			padding: 0.5em;
+			border-radius: 4px;
+			margin-right: 0.5em;
+		}
+
+		.actions{
+			position:absolute;
+			top: 1em;
+			right:1em;
+		}
+
+		.close{
+			height: 40px;
+			width: 40px;
+			color: white;
+			border-radius: 50%;
+			background-color: #642B73;
+			display: inline-block;
+			box-shadow: 0 3px 6px rgba(0,0,0,0,16), 0 3px 6px rgba(0,0,0,0,23);
+			font-weight: 300;
+			cursor: pointer;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.addr{
+			font-weight: bold;
+			color: #642B73;	
+			font-size: 1.2em;
+			margin-top:2em;
+			display: inline-block;
+		}
+
+		.main-images{
+			float: left;
+			margin-right: 1em;
+			height: 300px;
+		}
+		
+		/*con @media estamos haciendo resposivo el sitio para pantallas pequeñas tales como celulares, desde los mas populares hasta los mas limtados de pantalla*/
+		@media(min-width: 900px){
+			th{
+				display: table-cell;
+			}
+			td{ 
+				width:auto;
+				display: table-cell;
+
+			}
+			td:nth-of-type(1){
+				font-size: 1em;}
+				.content{
+					padding:1.8em;
+				}
+			}
+			
+		@media(min-height: 550px){
+			.content{
+				height: 500px
+			}
+		}
+
+		
+
+	
+
+
+/* degradado		paleta de colores
+#114859				#32a852 verde
+#CAE7E8				#f3e5f5 morado
+#EBFFFB
+#CAE8DB
+#93CCA7*/

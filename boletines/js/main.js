@@ -38,7 +38,7 @@ link.addEventListener("click",function(ev){
 	content.classList.add("animate__fadeOutUp");
 	content.classList.add("animate__animated");
 	setTimeout(function(){
-	location.href="/";	
+	location.href="/boletines/purificadoras";	
 },600);
 	
 return false;
